@@ -1,0 +1,71 @@
+	body{
+	background-image:url(img/bg1.jpg);
+	background-repeat:no-repeat; 
+	background-size:cover;
+	background-position:center top;
+	}
+	
+	#box ul {
+	list-style:none;
+	}
+
+	#box ul li { 
+	font-size:25px;
+	text-align:center;
+	font-family:Comic Sans MS;
+	text-shadow: 4px 4px 8px white, 2px 2px 20px white;
+	background-color:transparent;
+	width:270px;
+	height:50px;
+	line-height:50px;
+	position:center;
+	float:left;
+	border:7.5px solid transparent ;
+	border-image:url(circle.svg ) 20 round;
+	}
+	
+	
+	
+	#box ul ul {
+	display:none;
+	}
+	
+	#box ul li:hover>ul {
+	display:block;
+	}	
+	
+	
+	#box ul li:hover {
+		
+	background-color :orangered;
+    	animation-name:barcolor;
+    	animation-duration:1.5s;
+	transform:scale(1.1);
+	}
+	
+	@keyframes barcolor {
+    from {background-color:transparent;}
+    to {background-color:orangered;}
+	}
+			
+	#title {
+	text-align:center; 
+	font-size:50px; 
+	font-family:courier;
+	color:black;
+	text-shadow: 20px 20px 40px #EE6C5B, 20px 20px 24px #EE6C5B;
+	}
+	
+	#img :hover {
+	transform: scale(1.1);
+	}
+	
+	
+	
+	
+	
+	
+	
+
+	
+	

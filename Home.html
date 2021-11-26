@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<meta charset = "utf-8">
+<html dir="ltr" lang="en">
+<head>
+				<title>Home</title>
+				<link rel='shortcut icon' href='icon.ico'/>
+				
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+	
+	<center>
+	<header><a href="Home.html"><img src="img/Logo.png" width="225" height="100"></a></header>
+	</center>
+	
+	<body background="img/redbg.jpg" style="background-image:url(img/redbg.jpg); background-repeat:no-repeat; background-size:cover">
+	
+	<div id="box">
+		<ul>
+			<li><a href="Home.html"style="color:yellow; text-decoration:none">HOME</a></li>
+			<li><a href="Menu.html"style="color:yellow; text-decoration:none">MENU</a></li>
+			<li><a href="Gallery.html"style="color:yellow; text-decoration:none">GALLERY</a></li>
+			<li><a href="Contact_Us.html"style="color:yellow; text-decoration:none">CONTACT US</a></li>
+			<li><a href="About_Us.html"style="color:yellow; text-decoration:none">ABOUT US</a></li>
+		</ul>
+		</div>
+		
+		<br><br><br><br><br>
+	
+	<center>
+	<div class="slideshow-container">
+	<div class="mySlides fade">
+    <img src="img/chinese.jpg" style="width:55%;height:45%">
+	</a>  
+	</div> 
+	</center>
+
+	<center>
+	<div class="mySlides fade">
+    <img src="img/ontable.jpg" style="width:55%;height:45%">
+	</a>
+	</div>
+	</center>
+	
+	<center>
+	<div class="mySlides fade">
+	<img src="img/cook.jpeg" style="width:55%;height:45%">
+	</a>
+	</div>
+	</center>
+	</div>
+	<br>
+	
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 8000); 
+}
+</script>
+
+	<center>
+	<h1 style="text-align:center;font-family:Impact;font-size:50px;color:#ff944d">Labuan Fisherman Harbour Restaurant</h2>
+	<p style="font-family:sans-serif;font-size:25px;color:white">Labuan Fisherman Harbour Restaurant is a Chinese Restaurant
+	that established in May 2009. It is located inside a building called Paragon Mall, which is opposite to Sharetea, selling
+	various kind of dishes such as Butter Crispy Prawn,Black Pepper Beef,Fried Silver Fish,Salted Egg Soft Shell Crabs,
+	Sabah Vegetables With Egg and Toufu With Minced Meat. </p>
+	</style> 
+	</center>
+
+	<center>
+	<h2 style="text-align:center;font-family:Impact;font-size:50px;color:#ff944d">Enjoy Our Videos</h2>
+	</style>
+	</center>
+
+	<center>
+		<embed src="https://www.youtube.com/v/1C2m04h3Vpk" width="500" height="300">
+		<embed src="https://www.youtube.com/v/UBxJEdqeKMA" width="500" height="300">
+	</center>
+	
+	<h3 style="text-align:center;font-family:Impact;font-size:50px;color:#ff944d">Foods And Drinks</h3>
+	<center>
+	
+	<a href="Menu.html"><img src="img/Fmenu.jpg" width="500" height="300"></a>
+	<a href="Menu.html"><img src="img/teapot.jpg" width="500" height="300"></a>
+	
+	</center>
+	
+	<br><br><br><br><br><br><br><br><br><br>
+    
+	<footer style="text-align: right; font-style:Tw Cen MT; color:white">Copyright &copy; 2019, Salt Bae. All Rights Reserved.
+		</footer>			
+		
+	</body>
+</html>
